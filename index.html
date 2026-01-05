@@ -75,7 +75,7 @@
       white-space:nowrap;
     }
 
-    /* HERO */
+    /* HERO - OPTIMIZED FOR MOBILE */
     .hero{padding:18px 0 10px}
     .hero-card{
       border:1px solid var(--border);
@@ -102,30 +102,65 @@
     .overlay{
       position:absolute;inset:0;
       display:flex;flex-direction:column;justify-content:center;align-items:center;
-      padding:16px;text-align:center;
-      background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.82));
+      padding:20px;text-align:center;
+      background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.85));
     }
-    .hero-title{font-weight:900;font-size:20px}
-    .hero-sub{max-width:900px;color:var(--muted);font-size:13px;line-height:1.55}
+    .hero-title{
+      font-weight:900;
+      font-size:20px;
+      margin:0 0 12px;
+      padding:0 10px;
+      line-height:1.3;
+    }
+    .hero-sub{
+      max-width:900px;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.6;
+      margin:0 0 15px;
+      padding:0 10px;
+    }
 
-    .kws{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+    .kws{
+      margin-top:12px;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      justify-content:center;
+      padding:0 10px;
+    }
     .kw{
-      font-size:12px;font-weight:800;
-      padding:6px 10px;border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      padding:6px 10px;
+      border-radius:999px;
       border:1px solid var(--border);
       background:#fff;
       color:#374151;
+      word-break:break-word;
     }
 
-    .cta-row{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+    .cta-row{
+      margin-top:15px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:center;
+      padding:0 10px;
+    }
     .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:10px 14px;border-radius:12px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 18px;
+      border-radius:12px;
       border:1px solid var(--border);
       background:#fff;
       color:var(--text);
       font-weight:800;
       cursor:pointer;
+      min-width:160px;
+      font-size:14px;
     }
     .btn.primary{
       background:var(--accent);
@@ -274,7 +309,7 @@
     .author-meta{font-size:12px;color:#6b7280;margin-top:2px}
     .author-text{font-size:13px;color:var(--muted);line-height:1.55;margin-top:6px}
 
-    /* OFFERS - Более широкие картинки */
+    /* OFFERS */
     .side{padding:12px}
     .side-title{font-weight:900;margin:4px 0 10px}
     .offer-list{display:grid;gap:10px}
@@ -287,8 +322,8 @@
       min-height:80px;
     }
     .offer img{
-      width: 70px;  /* Шире чем на прошлом сайте (было 44px) */
-      height: 50px; /* Высота осталась прежней */
+      width: 70px;
+      height: 50px;
       border-radius: 10px;
       object-fit: cover;
       border: 1px solid var(--border);
@@ -345,18 +380,84 @@
     /* Hidden paths list (for you only) */
     .dev-hints{display:none}
 
-    /* MOBILE FIXES */
+    /* MOBILE FIXES - OPTIMIZED */
     @media (max-width: 980px){
       .grid2{grid-template-columns:1fr}
       .offerbar .right{text-align:left}
       .offerbar .mid{text-align:left}
     }
     @media (max-width: 720px){
-      .topbar-inner{flex-direction:column;align-items:flex-start}
-      .nav{justify-content:flex-start}
-      .hero-media{aspect-ratio:auto;min-height:280px}
-      .hero-title{font-size:18px}
-      .btn{min-width:0}
+      .topbar-inner{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+      }
+      .nav{
+        justify-content:flex-start;
+        width:100%;
+      }
+      
+      /* HERO MOBILE OPTIMIZATION */
+      .hero-media{
+        aspect-ratio: auto;
+        min-height: 320px;
+        height: auto;
+      }
+      
+      .overlay {
+        padding: 25px 15px;
+        justify-content: flex-start;
+        padding-top: 40px;
+        overflow-y: auto;
+        background: linear-gradient(180deg, rgba(255,255,255,.15), rgba(255,255,255,.9));
+      }
+      
+      .hero-title{
+        font-size: 18px;
+        line-height: 1.35;
+        margin-bottom: 15px;
+        word-wrap: break-word;
+        hyphens: auto;
+      }
+      
+      .hero-sub{
+        font-size: 12px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+        hyphens: auto;
+      }
+      
+      .kws {
+        margin-top: 15px;
+        gap: 6px;
+        justify-content: center;
+        max-height: 90px;
+        overflow-y: auto;
+        padding: 5px;
+      }
+      
+      .kw {
+        font-size: 11px;
+        padding: 5px 9px;
+        flex-shrink: 0;
+      }
+      
+      .cta-row {
+        margin-top: 20px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn {
+        padding: 12px 20px;
+        font-size: 15px;
+        min-width: 200px;
+        width: 100%;
+        max-width: 250px;
+      }
+      
       .footer-grid{grid-template-columns:1fr}
       
       /* На мобильных оставляем картинки меньше */
@@ -368,6 +469,84 @@
       .offer{
         padding:10px;
         gap:10px;
+      }
+      
+      /* Adjust author box for mobile */
+      .author-box {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .author-box img {
+        margin: 0 auto;
+      }
+    }
+
+    /* EXTRA SMALL DEVICES */
+    @media (max-width: 480px) {
+      .hero-media {
+        min-height: 350px;
+      }
+      
+      .overlay {
+        padding: 30px 12px;
+        padding-top: 50px;
+      }
+      
+      .hero-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      
+      .hero-sub {
+        font-size: 11px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+      }
+      
+      .kws {
+        max-height: 100px;
+        justify-content: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
+      .kw {
+        font-size: 10px;
+        padding: 4px 8px;
+      }
+      
+      .btn {
+        min-width: 180px;
+        padding: 11px 18px;
+        font-size: 14px;
+      }
+      
+      .hero-note {
+        font-size: 12px;
+        padding: 12px;
+      }
+      
+      /* Adjust nav for very small screens */
+      .nav {
+        gap: 5px;
+      }
+      
+      .nav a {
+        font-size: 13px;
+        padding: 6px 8px;
+      }
+      
+      .badge18 {
+        font-size: 11px;
+        padding: 5px 8px;
+      }
+    }
+
+    /* FOR VERY LARGE DESKTOP */
+    @media (min-width: 1400px) {
+      .container {
+        max-width: 1200px;
       }
     }
   </style>
@@ -407,8 +586,7 @@
           <div class="overlay">
             <div class="hero-title">Koi Princess Slot — Quick, Clear Guide</div>
             <div class="hero-sub">
-              A simple static page for readers who want structure: how the slot session works, what to look for in feature triggers,
-              and where to compare partner casinos. No exaggerated promises — just practical notes.
+              A simple static page for readers who want structure: how the slot session works, what to look for in feature triggers, and where to compare partner casinos. No exaggerated promises — just practical notes.
             </div>
 
             <div class="kws" aria-label="Keyword topics">
@@ -482,15 +660,13 @@
               it explains the play flow, outlines feature categories, and lists partner casino options.
             </p>
 
-            <!-- MAIN IMAGE - ТЕПЕРЬ ОТОБРАЖАЕТСЯ ДАЖЕ ЕСЛИ КАРТИНКИ НЕТ -->
+            <!-- MAIN IMAGE -->
             <div class="img-slot" aria-label="Main screenshot">
-              <!-- Картинка будет загружена если существует -->
               <img
                 src="images/main.jpg"
                 alt="Koi Princess slot screenshot"
                 loading="lazy"
               />
-              <!-- Если картинки нет - показываем это сообщение -->
               <div class="img-fallback">
                 <strong>🖼️ Place for game screenshot</strong><br>
                 <small>Upload image: <code>images/main.jpg</code></small>
@@ -597,7 +773,7 @@
           </div>
         </div>
 
-        <!-- OFFERS SIDEBAR - ТЕПЕРЬ КАРТИНКИ ВИДНЫ ДАЖЕ ЕСЛИ ИХ НЕТ -->
+        <!-- OFFERS SIDEBAR -->
         <aside class="card" aria-label="Partner casinos sidebar">
           <div class="side">
             <div class="side-title">Partner casinos</div>
@@ -865,7 +1041,6 @@
     // Показываем картинки даже если они не загрузились
     document.querySelectorAll('img').forEach(img => {
       img.onerror = function() {
-        // Если картинка не загрузилась, показываем серый блок с текстом
         this.style.backgroundColor = '#f3f4f6';
         this.style.border = '1px dashed #d1d5db';
         this.style.display = 'flex';
@@ -877,7 +1052,6 @@
         this.style.padding = '5px';
         this.style.boxSizing = 'border-box';
         
-        // Получаем имя файла из src
         const src = this.getAttribute('src') || '';
         const filename = src.split('/').pop() || 'image.png';
         this.textContent = filename;
@@ -990,6 +1164,28 @@
     .cookie-buttons {
       width: 100%;
       justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cookie-bar {
+      bottom: 5px;
+      width: 98%;
+      padding: 12px;
+    }
+    
+    .cookie-text {
+      font-size: 13px;
+    }
+    
+    .cookie-btn {
+      padding: 10px 16px;
+      font-size: 13px;
+      flex: 1;
+    }
+    
+    .cookie-buttons {
+      gap: 8px;
     }
   }
 </style>
