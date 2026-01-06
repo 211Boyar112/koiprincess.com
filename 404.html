@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Page Not Found - Koi Princess Slot</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to Koi Princess Slot guide for demo, features, RTP, volatility and partner casinos." />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#4b5563;
+      --border:#e5e7eb;
+      --accent:#2563eb; /* blue */
+      --accent2:#0ea5e9; /* light blue */
+      --radius:14px;
+      --shadow:0 10px 24px rgba(17,24,39,.08);
+    }
+
+    *{box-sizing:border-box; margin:0; padding:0}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+      min-height:100vh;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block;height:auto}
+
+    .container{
+      max-width:700px;
+      width:100%;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      border:1px solid var(--border);
+      background:var(--card);
+      backdrop-filter:blur(5px);
+    }
+
+    .header{
+      padding:24px 28px 20px;
+      border-bottom:1px solid var(--border);
+      background:linear-gradient(90deg, rgba(37,99,235,.08), rgba(14,165,233,.08));
+      text-align:center;
+    }
+
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:14px;
+      padding:12px 18px;
+      border:1px solid var(--border);
+      background:#fff;
+      border-radius:18px;
+      box-shadow:0 8px 24px rgba(0,0,0,.08);
+      margin-bottom:12px;
+    }
+
+    .brand-logo{
+      width:56px;
+      height:56px;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:900;
+      font-size:24px;
+      color:#fff;
+      border:1px solid rgba(255,255,255,.3);
+    }
+
+    .brand-name{
+      font-weight:900;
+      font-size:28px;
+      letter-spacing:.2px;
+    }
+
+    .subtitle{
+      color:rgba(17,24,39,.75);
+      font-size:15px;
+      margin-top:6px;
+    }
+
+    .error-content{
+      padding:36px 30px 32px;
+      text-align:center;
+      background:
+        radial-gradient(500px 280px at 30% 20%, rgba(37,99,235,.08), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.01));
+    }
+
+    .error-code{
+      font-size:140px;
+      font-weight:900;
+      line-height:1;
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      margin-bottom:10px;
+      letter-spacing:-6px;
+      text-shadow:0 8px 24px rgba(0,0,0,.1);
+    }
+
+    h1{
+      font-size:32px;
+      font-weight:900;
+      margin-bottom:16px;
+      letter-spacing:.2px;
+      color:var(--text);
+    }
+
+    .error-desc{
+      color:rgba(17,24,39,.82);
+      font-size:17px;
+      line-height:1.7;
+      max-width:46ch;
+      margin:0 auto 28px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px 32px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:var(--accent);
+      color:#fff;
+      font-weight:800;
+      font-size:16px;
+      cursor:pointer;
+      transition:transform 0.2s, box-shadow 0.2s;
+      box-shadow:0 10px 28px rgba(37,99,235,.15);
+      min-width:180px;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 32px rgba(37,99,235,.25);
+      background:#1d4ed8;
+    }
+
+    .btn-secondary{
+      background:#fff;
+      border-color:var(--border);
+      color:var(--text);
+      margin-left:14px;
+      box-shadow:0 8px 20px rgba(0,0,0,.05);
+    }
+
+    .btn-secondary:hover{
+      background:#f9fafb;
+      box-shadow:0 12px 28px rgba(0,0,0,.08);
+    }
+
+    .quick-links{
+      margin-top:32px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      justify-content:center;
+    }
+
+    .link-chip{
+      padding:10px 18px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#f9fafb;
+      color:rgba(17,24,39,.88);
+      font-weight:800;
+      font-size:14px;
+      transition:all 0.2s;
+    }
+
+    .link-chip:hover{
+      background:#fff;
+      border-color:var(--accent);
+      transform:translateY(-1px);
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+    }
+
+    .info-panel{
+      margin-top:28px;
+      padding:18px 20px;
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      background:#f9fafb;
+      font-size:14px;
+      color:rgba(17,24,39,.70);
+      line-height:1.6;
+      text-align:left;
+    }
+
+    .info-panel strong{
+      color:rgba(17,24,39,.95);
+      font-weight:900;
+    }
+
+    .footer{
+      padding:20px 28px;
+      border-top:1px solid var(--border);
+      background:#f9fafb;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .legal{
+      font-size:13px;
+      color:rgba(17,24,39,.60);
+    }
+
+    .legal a{
+      color:rgba(17,24,39,.80);
+      margin:0 8px;
+    }
+
+    .legal a:hover{
+      text-decoration:underline;
+      color:var(--accent);
+    }
+
+    .counter{
+      font-size:14px;
+      color:rgba(17,24,39,.65);
+      font-weight:800;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .countdown{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:32px;
+      height:32px;
+      border-radius:999px;
+      background:rgba(37,99,235,.10);
+      border:1px solid rgba(37,99,235,.20);
+      font-weight:900;
+      font-size:15px;
+      color:var(--accent);
+    }
+
+    @media (max-width: 768px){
+      .error-code{
+        font-size:100px;
+        letter-spacing:-4px;
+      }
+      h1{
+        font-size:26px;
+      }
+      .error-desc{
+        font-size:16px;
+      }
+      .footer{
+        flex-direction:column;
+        text-align:center;
+        gap:12px;
+      }
+      .legal{
+        order:2;
+      }
+      .counter{
+        order:1;
+      }
+      .btn-secondary{
+        margin-left:0;
+        margin-top:14px;
+      }
+      .btn{
+        min-width:160px;
+      }
+    }
+
+    @media (max-width: 480px){
+      .container{
+        border-radius:12px;
+      }
+      .header, .error-content, .footer{
+        padding:20px 18px;
+      }
+      .error-code{
+        font-size:80px;
+        letter-spacing:-3px;
+      }
+      h1{
+        font-size:22px;
+      }
+      .quick-links{
+        gap:10px;
+      }
+      .link-chip{
+        padding:8px 14px;
+        font-size:13px;
+      }
+      .btn{
+        padding:14px 24px;
+        font-size:15px;
+        width:100%;
+      }
+      .brand{
+        padding:10px 14px;
+        gap:10px;
+      }
+      .brand-logo{
+        width:48px;
+        height:48px;
+        font-size:20px;
+      }
+      .brand-name{
+        font-size:24px;
+      }
+    }
+  </style>
+
+  <!-- Schema Markup for 404 page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Page Not Found - Koi Princess Slot",
+    "description": "The page you're looking for doesn't exist. Return to Koi Princess Slot guide.",
+    "url": "https://koiprincess.com/404.html",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://koiprincess.com/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="container" role="main">
+    <div class="header">
+      <div class="brand">
+        <div class="brand-logo">404</div>
+        <div class="brand-name">Koi Princess Slot</div>
+      </div>
+      <div class="subtitle">Page Not Found • 18+ • Play responsibly</div>
+    </div>
+
+    <div class="error-content">
+      <div class="error-code" aria-label="Error code 404">404</div>
+      
+      <h1>Slot Page Not Found</h1>
+      
+      <p class="error-desc">
+        The page you're looking for doesn't exist. It may have been moved, renamed, or removed.
+      </p>
+      
+      <div style="margin-bottom:22px;">
+        <a href="/" class="btn" aria-label="Back to homepage">
+          Back to Koi Princess Slot
+        </a>
+        <a href="/#faq" class="btn btn-secondary" aria-label="Go to FAQ">
+          View FAQ & Help
+        </a>
+      </div>
+
+      <div class="quick-links">
+        <a href="/#overview" class="link-chip">Slot Overview</a>
+        <a href="/#howto" class="link-chip">How to Play</a>
+        <a href="/#features" class="link-chip">Slot Features</a>
+        <a href="/#rtp" class="link-chip">RTP & Volatility</a>
+        <a href="/#offers" class="link-chip">Partner Casinos</a>
+      </div>
+
+      <div class="info-panel">
+        <strong>Tip:</strong> Use the navigation above to go directly to the main sections of Koi Princess Slot guide – or simply return to the homepage for information about demo, features, RTP and partner casinos.
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="legal">
+        © <span id="currentYear"></span> koiprincess.com | 
+        <a href="/privacy-policy.html">Privacy Policy</a> • 
+        <a href="/terms.html">Terms</a> • 
+        <a href="/disclaimer.html">Disclaimer</a> •
+        <a href="/responsible-gaming.html">Responsible Gaming</a>
+      </div>
+      <div class="counter" id="redirectCounter">
+        Auto-redirect in 
+        <span class="countdown" id="countdown">10</span>
+        seconds
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Automatic redirect countdown
+    let seconds = 10;
+    const countdownElement = document.getElementById('countdown');
+    const countdownInterval = setInterval(() => {
+      seconds--;
+      countdownElement.textContent = seconds;
+      
+      if (seconds <= 0) {
+        clearInterval(countdownInterval);
+        window.location.href = "/";
+      }
+    }, 1000);
+    
+    // Track 404 error page (if analytics is present)
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'page_view', {
+        'page_title': '404 - Page Not Found - Koi Princess Slot',
+        'page_location': window.location.href,
+        'page_path': window.location.pathname
+      });
+    }
+    
+    // Click on any link stops the countdown
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        clearInterval(countdownInterval);
+        document.getElementById('redirectCounter').innerHTML = '<span style="color:var(--accent);">✓ Redirect stopped</span>';
+      });
+    });
+    
+    // Responsive adjustments
+    function adjustLayout() {
+      const width = window.innerWidth;
+      const buttons = document.querySelectorAll('.btn');
+      
+      if (width < 768) {
+        // Adjustments for mobile devices
+        buttons.forEach(btn => {
+          btn.style.width = '100%';
+          btn.style.margin = '6px 0';
+          btn.style.justifyContent = 'center';
+        });
+      }
+    }
+    
+    // Initial adjustment and listen for resize
+    adjustLayout();
+    window.addEventListener('resize', adjustLayout);
+  </script>
+</body>
+</html>
