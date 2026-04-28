@@ -77,79 +77,83 @@
       white-space:nowrap;
     }
 
-    /* HERO - OPTIMIZED FOR MOBILE */
+    /* HERO - PURPLE CARD WITH OVERLAY CTAs */
     .hero{padding:18px 0 10px}
     .hero-card{
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      background:var(--card);
+      border: 2px solid #ff4757;
+      border-radius: 14px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #4a1d8f 0%, #2f0c64 100%);
+      box-shadow: 0 6px 18px rgba(76, 22, 145, .25);
     }
     .hero-head{
-      padding:12px 14px;
-      text-align:center;
-      font-weight:900;
-      border-bottom:1px solid var(--border);
-      background:linear-gradient(90deg, rgba(37,99,235,.08), rgba(14,165,233,.08));
+      padding: 14px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 18px;
+      color: #fff;
+      background: rgba(255,255,255,.06);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      letter-spacing: .02em;
     }
     .hero-media{
-      position:relative;
-      aspect-ratio: 16 / 8;
-      min-height:220px;
-      background:#f3f4f6;
-      border-bottom:1px solid var(--border);
+      position: relative;
+      background: #1f1247;
+      min-height: 360px;
+      max-height: 520px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .hero-media img{width:100%;height:100%;object-fit:cover}
-    .overlay{
-      position:absolute;inset:0;
-      display:flex;flex-direction:column;justify-content:center;align-items:center;
-      padding:20px;text-align:center;
-      background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.85));
+    .hero-media img{
+      width: 100%;
+      height: auto;
+      max-height: 520px;
+      object-fit: cover;
+      display: block;
     }
-    .hero-title{
-      font-weight:900;
-      font-size:20px;
-      margin:0 0 12px;
-      padding:0 10px;
-      line-height:1.3;
+    .hero-cta-overlay{
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      pointer-events: none;
     }
-    .hero-sub{
-      max-width:900px;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.6;
-      margin:0 0 15px;
-      padding:0 10px;
+    .btn-play{
+      pointer-events: auto;
+      display: inline-block;
+      background: linear-gradient(180deg, #ffeb3b 0%, #fbc02d 100%);
+      color: #1a0a3e;
+      padding: 14px 40px;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: 15px;
+      text-decoration: none;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,.35);
+      border: 0;
+      cursor: pointer;
+      transition: filter .15s ease, transform .05s ease;
     }
+    .btn-play:hover{filter: brightness(1.06)}
+    .btn-play:active{transform: translateY(1px)}
 
-    .kws{
-      margin-top:12px;
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-      justify-content:center;
-      padding:0 10px;
+    .hero-note{
+      padding: 12px 18px;
+      font-size: 13px;
+      color: rgba(255,255,255,.85);
+      border-top: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.15);
+      text-align: center;
     }
-    .kw{
-      font-size:12px;
-      font-weight:800;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:#fff;
-      color:#374151;
-      word-break:break-word;
-    }
+    .hero-note strong{color:#fff}
 
-    .cta-row{
-      margin-top:15px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      justify-content:center;
-      padding:0 10px;
-    }
+    /* generic .btn used elsewhere on the page */
     .btn{
       display:inline-flex;
       align-items:center;
@@ -163,42 +167,70 @@
       cursor:pointer;
       min-width:160px;
       font-size:14px;
+      text-decoration:none;
+      transition: filter .15s ease;
     }
     .btn.primary{
       background:var(--accent);
       border-color:rgba(0,0,0,0);
       color:#fff;
     }
-    .btn.primary:hover{filter:brightness(.98)}
+    .btn.primary:hover{filter:brightness(1.05)}
     .btn:hover{background:#f9fafb}
 
-    .hero-note{
-      padding:10px 14px;
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    /* OFFERBAR */
+    /* FEATURED OFFER BAR (rotating) */
     .offerbar{
-      margin-top:12px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      background:#fff;
+      margin-top: 14px;
+      border: 2px solid #ff4757;
+      border-radius: 14px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #4a1d8f 0%, #2f0c64 100%);
+      box-shadow: 0 6px 18px rgba(76, 22, 145, .25);
+      transition: opacity .25s ease;
     }
     .offerbar-inner{
-      display:flex;align-items:center;justify-content:space-between;
-      gap:12px;flex-wrap:wrap;
-      padding:12px 14px;
+      display: grid;
+      grid-template-columns: minmax(120px, 200px) 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 14px 18px;
+      min-height: 80px;
     }
-    .offerbar .left{display:flex;align-items:center;gap:12px;min-width:220px}
-    .offerbar .left img{
-      width:42px;height:42px;border-radius:12px;
-      border:1px solid var(--border);object-fit:cover;background:#fff;
+    .offerbar-logo{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 48px;
     }
-    .offerbar .mid{font-weight:900;flex:1;min-width:220px;text-align:center}
-    .offerbar .right{min-width:160px;text-align:right}
+    .offerbar-logo img{
+      height: 44px;
+      max-width: 180px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .offerbar-bonus{
+      text-align: center;
+      font-size: 18px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.3;
+    }
+    .offerbar-cta{
+      display: inline-block;
+      background: linear-gradient(180deg, #ffeb3b 0%, #fbc02d 100%);
+      color: #1a0a3e;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: 14px;
+      text-decoration: none;
+      border: 0;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: filter .15s ease;
+    }
+    .offerbar-cta:hover{filter: brightness(1.05)}
     .pill{
       display:inline-block;
       padding:6px 10px;border-radius:999px;
@@ -210,13 +242,68 @@
 
     /* FEATURES (details) */
     .features-toggle{
-      margin-top:12px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      background:#fff;
+      margin-top: 14px;
+      border: 2px solid #ff4757;
+      border-radius: 14px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #4a1d8f 0%, #2f0c64 100%);
+      box-shadow: 0 6px 18px rgba(76, 22, 145, .25);
     }
+    .features-toggle > details > summary{
+      background: rgba(255,255,255,.06) !important;
+      color: #fff !important;
+      font-size: 16px !important;
+      padding: 14px 18px !important;
+      justify-content: center !important;
+      gap: 12px !important;
+      border-bottom: 1px solid rgba(255,255,255,.10) !important;
+    }
+    .features-toggle > details:not([open]) > summary{
+      border-bottom: 0 !important;
+    }
+    .features-toggle > details > summary .chev{
+      font-size: 12px;
+      transition: transform .2s ease;
+      color: #fff;
+    }
+    .features-toggle > details[open] > summary .chev{
+      transform: rotate(180deg);
+    }
+    .features-toggle .details-body{
+      padding: 0 !important;
+      border-top: 0 !important;
+      background: transparent !important;
+    }
+    .slot-features-table{
+      width: 100%;
+      min-width: 0 !important;
+      border-collapse: collapse;
+      background: transparent !important;
+    }
+    .slot-features-table tr{
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .slot-features-table tr:first-child{border-top: 0}
+    .slot-features-table th,
+    .slot-features-table td{
+      padding: 12px 18px !important;
+      font-size: 13px !important;
+      line-height: 1.4;
+      border: 0 !important;
+      background: transparent !important;
+    }
+    .slot-features-table th{
+      color: #fff !important;
+      font-weight: 900;
+      text-align: left !important;
+      width: 50%;
+    }
+    .slot-features-table td{
+      color: #ffeb3b !important;
+      font-weight: 700;
+      text-align: right !important;
+    }
+
     details summary{
       cursor:pointer;
       list-style:none;
@@ -445,8 +532,15 @@
     /* MOBILE FIXES - OPTIMIZED */
     @media (max-width: 980px){
       .grid2{grid-template-columns:1fr}
-      .offerbar .right{text-align:left}
-      .offerbar .mid{text-align:left}
+      .offerbar-inner{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 14px;
+        text-align: center;
+      }
+      .offerbar-logo{justify-content: center}
+      .offerbar-bonus{font-size: 16px}
+      .offerbar-cta{width: 100%}
     }
     @media (max-width: 720px){
       .topbar-inner{
@@ -458,82 +552,57 @@
         justify-content:flex-start;
         width:100%;
       }
-      
-      /* HERO MOBILE OPTIMIZATION */
+
+      /* HERO mobile (simple purple card) */
+      .hero-head{
+        padding: 12px;
+        font-size: 16px;
+      }
       .hero-media{
-        aspect-ratio: auto;
-        min-height: 320px;
-        height: auto;
+        min-height: 280px;
+        max-height: 380px;
       }
-      
-      .overlay {
-        padding: 25px 15px;
-        justify-content: flex-start;
-        padding-top: 40px;
-        overflow-y: auto;
-        background: linear-gradient(180deg, rgba(255,255,255,.15), rgba(255,255,255,.9));
+      .hero-cta-overlay{gap: 10px}
+      .btn-play{
+        padding: 12px 28px;
+        font-size: 14px;
+        min-width: 180px;
       }
-      
-      .hero-title{
-        font-size: 18px;
-        line-height: 1.35;
-        margin-bottom: 15px;
-        word-wrap: break-word;
-        hyphens: auto;
-      }
-      
-      .hero-sub{
+      .hero-note{
         font-size: 12px;
-        line-height: 1.6;
-        margin-bottom: 20px;
-        word-wrap: break-word;
-        hyphens: auto;
+        padding: 11px 14px;
       }
-      
-      .kws {
-        margin-top: 15px;
-        gap: 6px;
-        justify-content: center;
-        max-height: 90px;
-        overflow-y: auto;
-        padding: 5px;
-      }
-      
-      .kw {
-        font-size: 11px;
-        padding: 5px 9px;
-        flex-shrink: 0;
-      }
-      
-      .cta-row {
-        margin-top: 20px;
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-      }
-      
+
+      /* Generic .btn used elsewhere */
       .btn {
-        padding: 12px 20px;
-        font-size: 15px;
-        min-width: 200px;
-        width: 100%;
-        max-width: 250px;
+        padding: 12px 18px;
+        font-size: 14px;
       }
-      
+
       .footer-grid{grid-template-columns:1fr}
-      
+
       .offer-head{padding:12px 14px;min-height:58px}
       .offer-head .logo{height:38px;max-width:150px}
       .offer-bonus{font-size:14px}
       .offer-features li{font-size:12px}
       .offer-cta{font-size:14px;padding:11px}
-      
-      /* Adjust author box for mobile */
+
+      /* Slot features table: tighter padding on mobile */
+      .slot-features-table th,
+      .slot-features-table td{
+        padding: 11px 14px !important;
+        font-size: 12px !important;
+      }
+      .features-toggle > details > summary{
+        font-size: 15px !important;
+        padding: 12px 14px !important;
+      }
+
+      /* Author box */
       .author-box {
         flex-direction: column;
         text-align: center;
       }
-      
       .author-box img {
         margin: 0 auto;
       }
@@ -541,48 +610,30 @@
 
     /* EXTRA SMALL DEVICES */
     @media (max-width: 480px) {
-      .hero-media {
-        min-height: 350px;
+      .hero-head{
+        padding: 11px;
+        font-size: 15px;
       }
-      
-      .overlay {
-        padding: 30px 12px;
-        padding-top: 50px;
+      .hero-media{
+        min-height: 240px;
+        max-height: 320px;
       }
-      
-      .hero-title {
-        font-size: 16px;
-        margin-bottom: 12px;
+      .btn-play{
+        padding: 11px 22px;
+        font-size: 13px;
+        min-width: 160px;
       }
-      
-      .hero-sub {
-        font-size: 11px;
-        line-height: 1.7;
-        margin-bottom: 18px;
-      }
-      
-      .kws {
-        max-height: 100px;
-        justify-content: flex-start;
-        padding-left: 0;
-        padding-right: 0;
-      }
-      
-      .kw {
-        font-size: 10px;
-        padding: 4px 8px;
-      }
-      
-      .btn {
-        min-width: 180px;
-        padding: 11px 18px;
-        font-size: 14px;
-      }
-      
       .hero-note {
-        font-size: 12px;
-        padding: 12px;
+        font-size: 11px;
+        padding: 10px 12px;
       }
+      .slot-features-table th,
+      .slot-features-table td{
+        padding: 10px 12px !important;
+        font-size: 11px !important;
+      }
+      .offerbar-bonus{font-size: 14px !important}
+      .offerbar-logo img{height: 36px}
       
       /* Adjust nav for very small screens */
       .nav {
@@ -789,77 +840,53 @@
   <div class="hero">
     <div class="container">
       <div class="hero-card">
-        <div class="hero-head">Koi Princess Slot</div>
+        <div class="hero-head">Koi Princess</div>
 
         <div class="hero-media">
-          <img src="images/hero.jpg" alt="Koi Princess slot hero image" loading="lazy" />
-          <div class="overlay">
-            <div class="hero-title">Koi Princess Slot — Quick, Clear Guide</div>
-            <div class="hero-sub">
-              A simple static page for readers who want structure: how the slot session works, what to look for in feature triggers, and where to compare partner casinos. No exaggerated promises — just practical notes.
-            </div>
-
-            <div class="kws" aria-label="Keyword topics">
-              <span class="kw">koi princess slot</span>
-              <span class="kw">koi princess demo</span>
-              <span class="kw">koi princess RTP</span>
-              <span class="kw">koi princess volatility</span>
-              <span class="kw">slot guide</span>
-            </div>
-
-            <div class="cta-row">
-              <a class="btn primary" href="#offers">See partner casinos</a>
-              <a class="btn" href="#overview">Read overview</a>
-            </div>
+          <img src="images/hero.jpg" alt="Koi Princess slot by NetEnt — game artwork" loading="eager" fetchpriority="high" />
+          <div class="hero-cta-overlay">
+            <a class="btn-play" href="#offers">Play Now</a>
+            <a class="btn-play" href="#demo-mode">Play for free</a>
           </div>
         </div>
 
         <div class="hero-note">
-          <strong>18+ only:</strong> this page is informational. Gambling can be risky — use limits and play responsibly.
+          <strong>18+ only.</strong> This page is informational. Gambling can be addictive — set limits and play responsibly.
         </div>
       </div>
 
-      <!-- TOP OFFER BAR -->
-      <div class="offerbar" id="offers">
+      <!-- TOP OFFER BAR (rotates through sidebar offers) -->
+      <div class="offerbar" id="offers" data-rotating-offer>
         <div class="offerbar-inner">
-          <div class="left">
-            <img src="images/offers/hellspin.png" alt="HellSpin logo" loading="lazy" />
-            <div>
-              <div style="font-weight:900;">HellSpin — Featured partner</div>
-              <div class="pill">Compare offers</div>
-            </div>
-          </div>
-          <div class="mid">Koi Princess casino options (18+) — choose a partner site</div>
-          <div class="right">
-            <a class="btn primary" href="#offers-list">See offers</a>
-          </div>
+          <a class="offerbar-logo" href="#offers-list" target="_blank" rel="nofollow noopener" aria-label="Featured partner casino">
+            <img src="images/offers/hellspin.png" alt="Featured partner logo" loading="lazy" />
+          </a>
+          <div class="offerbar-bonus">Welcome package up to €3,000 + 150 Free Spins</div>
+          <a class="offerbar-cta" href="#offers-list" target="_blank" rel="nofollow noopener">Claim bonus</a>
         </div>
       </div>
 
       <!-- FEATURES -->
       <div class="features-toggle" id="features">
-        <details open>
+        <details>
           <summary>
-            Slot Features (quick list)
-            <span style="color:#6b7280;font-weight:900;">▼</span>
+            Slot Features
+            <span class="chev">▼</span>
           </summary>
           <div class="details-body">
-            <ul>
-              <li><strong>Game:</strong> Koi Princess slot</li>
-              <li><strong>Provider:</strong> NetEnt</li>
-              <li><strong>Released:</strong> 24 November 2015</li>
-              <li><strong>Theme:</strong> Japanese / anime-inspired, koi pond aesthetic</li>
-              <li><strong>Reels &amp; rows:</strong> 5 reels × 3 rows</li>
-              <li><strong>Paylines:</strong> 20 fixed (left to right)</li>
-              <li><strong>Bet range:</strong> €0.20 – €200 per spin</li>
-              <li><strong>RTP:</strong> 96.23%</li>
-              <li><strong>Volatility:</strong> Medium</li>
-              <li><strong>Max win:</strong> 1,000× stake</li>
-              <li><strong>Random features:</strong> 5-Hit, Random Wilds, Wild Reels, Bonus Activation</li>
-              <li><strong>Main bonus features:</strong> Sure Win Free Spins, Wild Reels Free Spins, Coin Win, Bonus Wheel</li>
-              <li><strong>Bonus Bet:</strong> Optional — increases the chance of triggering features</li>
-              <li><strong>Mobile:</strong> Yes (HTML5, iOS &amp; Android)</li>
-            </ul>
+            <table class="slot-features-table">
+              <tbody>
+                <tr><th>Devices</th><td>All devices</td></tr>
+                <tr><th>Layout</th><td>5-3</td></tr>
+                <tr><th>Stakes</th><td>€0.20 – €200</td></tr>
+                <tr><th>Release Date</th><td>24 November 2015</td></tr>
+                <tr><th>Rating</th><td>4.5 / 5</td></tr>
+                <tr><th>RTP</th><td>96.23%</td></tr>
+                <tr><th>Provider</th><td>NetEnt</td></tr>
+                <tr><th>Volatility</th><td>Medium</td></tr>
+                <tr><th>Max Win</th><td>×1,000</td></tr>
+              </tbody>
+            </table>
           </div>
         </details>
       </div>
@@ -1400,6 +1427,47 @@
         this.alt = `Placeholder: ${filename}`;
       };
     });
+
+    // Featured offer bar — auto-rotate through sidebar offers
+    (function rotateOfferbar(){
+      const bar = document.querySelector('[data-rotating-offer]');
+      if(!bar) return;
+      const offers = Array.from(document.querySelectorAll('.offer-list .offer'));
+      if(offers.length === 0) return;
+
+      const logoLink = bar.querySelector('.offerbar-logo');
+      const logoImg = bar.querySelector('.offerbar-logo img');
+      const bonusEl = bar.querySelector('.offerbar-bonus');
+      const ctaEl = bar.querySelector('.offerbar-cta');
+      if(!logoImg || !bonusEl || !ctaEl) return;
+
+      let i = Math.floor(Math.random() * offers.length);
+
+      function show(idx){
+        const o = offers[idx];
+        const img = o.querySelector('.offer-head .logo');
+        const bonus = o.querySelector('.offer-bonus');
+        const cta = o.querySelector('.offer-cta');
+        if(!img || !bonus || !cta) return;
+
+        bar.style.opacity = '0';
+        setTimeout(function(){
+          logoImg.src = img.src;
+          logoImg.alt = img.alt || 'Partner casino logo';
+          bonusEl.textContent = bonus.textContent.trim();
+          const href = cta.getAttribute('href') || '#offers-list';
+          logoLink.setAttribute('href', href);
+          ctaEl.setAttribute('href', href);
+          bar.style.opacity = '1';
+        }, 220);
+      }
+
+      show(i);
+      setInterval(function(){
+        i = (i + 1) % offers.length;
+        show(i);
+      }, 15000);
+    })();
   </script>
   <!-- COOKIE CONSENT BAR -->
 <div id="cookieBar" class="cookie-bar">
