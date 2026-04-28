@@ -6,8 +6,10 @@
 
   <title>Koi Princess Slot — Simple Guide, Demo, RTP & Volatility</title>
   <meta name="description" content="Koi Princess slot guide: how it plays, key features, bonus notes, RTP & volatility explanation, mobile tips, and FAQ. 18+ only. Play responsibly." />
-  <link rel="canonical" href="https://koiprincess.com" />
-  <meta name="robots" content="index,follow" />
+  <meta name="keywords" content="koi princess slot, koi princess demo, koi princess rtp, koi princess volatility, koi princess netent, koi princess bonus features, koi princess free spins, netent slots" />
+  <link rel="canonical" href="https://koiprincess.com/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="indexnow-key" content="b3c8f1a5e2d9047618fedcba905432c7">
 
   <!-- Favicons -->
   <link rel="icon" href="images/favicon.png" type="image/png" />
@@ -17,7 +19,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Koi Princess Slot — Simple Guide, Demo, RTP & Volatility" />
   <meta property="og:description" content="A clean Koi Princess slot guide: gameplay overview, feature notes, RTP & volatility explanation, mobile tips, and FAQ. 18+ only." />
-  <meta property="og:url" content="https://koiprincess.com" />
+  <meta property="og:url" content="https://koiprincess.com/" />
   <meta property="og:type" content="website" />
 
   <style>
@@ -311,41 +313,101 @@
 
     /* OFFERS */
     .side{padding:12px}
-    .side-title{font-weight:900;margin:4px 0 10px}
-    .offer-list{display:grid;gap:10px}
+    .side-title{font-weight:900;margin:4px 0 14px;font-size:18px;text-align:center}
+    .offer-list{display:grid;gap:14px}
     .offer{
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:12px;
-      display:flex;gap:12px;align-items:center;
-      background:#fff;
-      min-height:80px;
+      background: linear-gradient(180deg, #4a1d8f 0%, #2f0c64 100%);
+      border: 2px solid #ff4757;
+      border-radius: 14px;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(76, 22, 145, .25);
+      color: #fff;
     }
-    .offer img{
-      width: 70px;
-      height: 50px;
-      border-radius: 10px;
-      object-fit: cover;
-      border: 1px solid var(--border);
-      background: #f9fafb;
+    .offer-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      padding: 14px 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      min-height: 64px;
+    }
+    .offer-head .logo{
+      height: 44px;
+      max-width: 170px;
+      width: auto;
+      object-fit: contain;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
       flex: 0 0 auto;
       display: block;
     }
-    .offer .meta{flex:1}
-    .offer .name{font-weight:900;color:var(--text);font-size:15px}
-    .offer .desc{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.4}
-    .offer .action{margin-top:8px}
-    .offer .btn{
-      min-width:auto;
-      padding:8px 12px;
-      border-radius:10px;
-      font-size:13px;
-      background:var(--accent);
-      color:#fff;
-      border:none;
-      font-weight:700;
+    .offer-rating{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-end;
+      font-size: 11px;
+      color: rgba(255,255,255,.78);
+      line-height:1.1;
+      flex-shrink: 0;
     }
-    .offer .btn:hover{filter:brightness(.95)}
+    .offer-rating .stars{
+      color: #ffc107;
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .offer-body{padding: 14px 14px 16px}
+    .offer-bonus{
+      font-size: 15px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.4;
+      margin: 0 0 12px;
+    }
+    .offer-features{
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px;
+    }
+    .offer-features li{
+      position: relative;
+      padding-left: 22px;
+      font-size: 13px;
+      color: rgba(255,255,255,.92);
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .offer-features li::before{
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #ffc107;
+      font-weight: 900;
+      font-size: 14px;
+    }
+    .offer-cta{
+      display: block;
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+      background: linear-gradient(180deg, #ffd54f 0%, #ffb300 100%);
+      color: #2d0f5c;
+      font-weight: 900;
+      font-size: 15px;
+      border-radius: 10px;
+      border: 0;
+      cursor: pointer;
+      text-decoration: none;
+      box-sizing: border-box;
+      transition: filter .15s ease, transform .05s ease;
+    }
+    .offer-cta:hover{filter:brightness(1.05)}
+    .offer-cta:active{transform:translateY(1px)}
 
     /* FAQ */
     .faq details{margin-top:10px;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#fff}
@@ -460,16 +522,11 @@
       
       .footer-grid{grid-template-columns:1fr}
       
-      /* На мобильных оставляем картинки меньше */
-      .offer img{
-        width: 60px;
-        height: 45px;
-      }
-      
-      .offer{
-        padding:10px;
-        gap:10px;
-      }
+      .offer-head{padding:12px 14px;min-height:58px}
+      .offer-head .logo{height:38px;max-width:150px}
+      .offer-bonus{font-size:14px}
+      .offer-features li{font-size:12px}
+      .offer-cta{font-size:14px;padding:11px}
       
       /* Adjust author box for mobile */
       .author-box {
@@ -550,6 +607,159 @@
       }
     }
   </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://koiprincess.com/#website",
+        "url": "https://koiprincess.com/",
+        "name": "Koi Princess",
+        "description": "Koi Princess slot guide: RTP 96.23%, medium volatility, bonus features, demo and FAQ. 18+ only.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://koiprincess.com/#game",
+        "name": "Koi Princess",
+        "alternateName": "Koi Princess Slot",
+        "description": "Koi Princess is a 5×3 video slot from NetEnt with 20 fixed paylines, 96.23% RTP, medium volatility, four random features and four main bonus rounds. Max win is 1,000× the stake.",
+        "image": "https://koiprincess.com/images/main.jpg",
+        "url": "https://koiprincess.com/",
+        "author": {
+          "@type": "Organization",
+          "name": "NetEnt",
+          "url": "https://www.netent.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "NetEnt"
+        },
+        "genre": ["Slot", "Video slot", "Casino game"],
+        "gamePlatform": ["Web browser", "iOS", "Android"],
+        "applicationCategory": "GameApplication",
+        "datePublished": "2015-11-24",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Review",
+        "@id": "https://koiprincess.com/#review",
+        "name": "Koi Princess Slot Review",
+        "headline": "Koi Princess Slot — RTP, Bonus Features and Demo Guide",
+        "url": "https://koiprincess.com/",
+        "itemReviewed": { "@id": "https://koiprincess.com/#game" },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Koi Princess Editorial Team",
+          "url": "https://koiprincess.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Koi Princess",
+          "url": "https://koiprincess.com/"
+        },
+        "datePublished": "2026-04-28",
+        "dateModified": "2026-04-28",
+        "reviewBody": "Koi Princess from NetEnt is a feature-rich 5x3 slot with 20 fixed paylines, 96.23% RTP and medium volatility. The standout element is the bonus structure: four random features can fire on any spin, plus four main bonus features triggered by scatters. The optional Bonus Bet doubles the spin cost in exchange for a higher chance of features."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://koiprincess.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who developed the Koi Princess slot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Koi Princess was developed by NetEnt and released on 24 November 2015. NetEnt is an established Swedish slot studio with a long history of audited RNGs and well-known titles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Koi Princess RTP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The published RTP is 96.23% in standard mode. Activating the Bonus Bet shifts the RTP slightly. RTP is a long-term theoretical figure and does not guarantee any specific outcome in a single session."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How volatile is Koi Princess?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Volatility is medium. You can expect a steady stream of small to medium wins, with occasional bigger bursts from the random features and main bonus rounds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the maximum win on Koi Princess?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The maximum win is 1,000× the stake, typically reached through Wild Reels Free Spins or the top tier of the Bonus Wheel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many paylines does Koi Princess have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Koi Princess has 20 fixed paylines across 5 reels and 3 rows. You cannot deactivate lines — every spin always covers all 20."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What bonus features does the slot have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There are four random features (5-Hit, Random Wilds, Wild Reels, Bonus Activation) that can hit on any spin, plus four main bonus features triggered by scatters: Sure Win Free Spins, Wild Reels Free Spins, Coin Win and the Bonus Wheel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Bonus Bet work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The optional Bonus Bet doubles the cost of each spin in exchange for a roughly doubled chance of triggering random features and a higher chance of hitting the main bonus rounds. It is a pacing choice, not free value — your bankroll burns faster."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I play Koi Princess in demo mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A free demo is widely available across licensed casinos and review sites. Demo mode is great for learning the rhythm of the features, but it does not predict real-money outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Koi Princess optimized for mobile?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The slot is built in HTML5 and runs in the browser on iOS, Android, tablets and desktops. No app install is required, and the layout adapts to portrait and landscape."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you guarantee wins?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Slots are random. The safest approach is budgeting, deposit and loss limits, breaks, and responsible play. This site (18+ only) is informational and does not guarantee any outcome."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -584,9 +794,9 @@
         <div class="hero-media">
           <img src="images/hero.jpg" alt="Koi Princess slot hero image" loading="lazy" />
           <div class="overlay">
-            <div class="hero-title">Koi Princess Slot — Overview, Features & RTP</div>
+            <div class="hero-title">Koi Princess Slot — Quick, Clear Guide</div>
             <div class="hero-sub">
-              A clear overview of the Koi Princess slot: gameplay basics, key features, RTP and volatility, plus where to find demo play and licensed partner casinos. Straightforward information, no hype.
+              A simple static page for readers who want structure: how the slot session works, what to look for in feature triggers, and where to compare partner casinos. No exaggerated promises — just practical notes.
             </div>
 
             <div class="kws" aria-label="Keyword topics">
@@ -613,9 +823,9 @@
       <div class="offerbar" id="offers">
         <div class="offerbar-inner">
           <div class="left">
-            <img src="images/partner-featured.png" alt="Featured partner" loading="lazy" />
+            <img src="images/offers/hellspin.png" alt="HellSpin logo" loading="lazy" />
             <div>
-              <div style="font-weight:900;">TurboWins — Featured partner</div>
+              <div style="font-weight:900;">HellSpin — Featured partner</div>
               <div class="pill">Compare offers</div>
             </div>
           </div>
@@ -636,13 +846,19 @@
           <div class="details-body">
             <ul>
               <li><strong>Game:</strong> Koi Princess slot</li>
-              <li><strong>Theme:</strong> koi / Japanese-inspired aesthetic (update if needed)</li>
-              <li><strong>Reels:</strong> TBD</li>
-              <li><strong>Paylines / Ways:</strong> TBD</li>
-              <li><strong>Typical features:</strong> wilds, scatters, free spins (confirm specifics and expand)</li>
-              <li><strong>RTP:</strong> TBD</li>
-              <li><strong>Volatility:</strong> TBD</li>
-              <li><strong>Mobile:</strong> yes (site is responsive; casino support may vary)</li>
+              <li><strong>Provider:</strong> NetEnt</li>
+              <li><strong>Released:</strong> 24 November 2015</li>
+              <li><strong>Theme:</strong> Japanese / anime-inspired, koi pond aesthetic</li>
+              <li><strong>Reels &amp; rows:</strong> 5 reels × 3 rows</li>
+              <li><strong>Paylines:</strong> 20 fixed (left to right)</li>
+              <li><strong>Bet range:</strong> €0.20 – €200 per spin</li>
+              <li><strong>RTP:</strong> 96.23%</li>
+              <li><strong>Volatility:</strong> Medium</li>
+              <li><strong>Max win:</strong> 1,000× stake</li>
+              <li><strong>Random features:</strong> 5-Hit, Random Wilds, Wild Reels, Bonus Activation</li>
+              <li><strong>Main bonus features:</strong> Sure Win Free Spins, Wild Reels Free Spins, Coin Win, Bonus Wheel</li>
+              <li><strong>Bonus Bet:</strong> Optional — increases the chance of triggering features</li>
+              <li><strong>Mobile:</strong> Yes (HTML5, iOS &amp; Android)</li>
             </ul>
           </div>
         </details>
@@ -655,9 +871,10 @@
           <div class="content">
             <h1>Koi Princess Slot — Overview</h1>
             <p>
-              <strong>Koi Princess</strong> is often searched as <em>koi princess slot</em> or <em>koi princess demo</em>.
-              This page on <strong>koiprincess.com</strong> is built to be lightweight and readable:
-              it explains the play flow, outlines feature categories, and lists partner casino options.
+              <strong>Koi Princess</strong> is a 5×3 video slot from <strong>NetEnt</strong>, released in November 2015 and built around a calm Japanese koi-pond aesthetic with anime-style art. Players often look for it as <em>koi princess slot</em>, <em>koi princess demo</em> or <em>koi princess RTP</em> — and the appeal is the same in every search: a feature-rich game with a relaxed visual tone. The reels are framed by lanterns, falling petals and gentle water effects, while traditional Japanese instruments and soft percussion play in the background.
+            </p>
+            <p>
+              The slot runs on 20 fixed paylines and pays from left to right starting on reel 1. Its <strong>RTP is 96.23%</strong>, volatility is <strong>medium</strong>, and the <strong>max win is 1,000× the stake</strong>. What makes Koi Princess stand out is the bonus structure: four <em>random features</em> can fire on any spin, and four <em>main bonus features</em> can be triggered through scatter symbols. There is also an optional <strong>Bonus Bet</strong> that doubles the spin cost in exchange for a higher chance of triggering features.
             </p>
 
             <!-- MAIN IMAGE -->
@@ -686,40 +903,75 @@
               </div>
             </div>
 
-            <h2 id="howto">How to Play (simple steps)</h2>
+            <h2 id="howto">How to Play Koi Princess</h2>
             <p>
-              Slot sessions are easy to describe without guessing: pick a stake, spin, read the result, and track feature triggers.
-              If you later add official rules, you can expand the details.
+              The flow is straightforward. You set a stake, spin the reels, and watch how symbols line up across the 20 fixed paylines from left to right. There is no need to choose how many lines to activate — every spin always covers all 20.
             </p>
             <ul>
-              <li><strong>Choose a bet:</strong> set a stake that matches your limits.</li>
-              <li><strong>Spin:</strong> the reels resolve outcomes under the game rules.</li>
-              <li><strong>Check payouts:</strong> wins depend on the paytable and winning combinations.</li>
-              <li><strong>Watch for triggers:</strong> wild/scatter/free spins or bonus modes (if available).</li>
+              <li><strong>Coin value:</strong> sets how much each coin is worth. Adjust this to scale the spin cost up or down.</li>
+              <li><strong>Bet level:</strong> sets how many coins are wagered per line. Higher bet level = larger stake and bigger potential wins.</li>
+              <li><strong>Spin / Auto / Quick spin:</strong> manual spins, autoplay with limits, or a faster spin mode for experienced players.</li>
+              <li><strong>Bonus Bet:</strong> optional toggle that doubles the cost of each spin and increases the chance of triggering features (more on this below).</li>
             </ul>
-
-            <h2 id="bonuses">Bonus Features (what to describe)</h2>
             <p>
-              When you confirm the official feature list, keep descriptions short and factual. Common categories:
+              Wins on Koi Princess come from three places: matching symbols on a payline, random features that fire without warning, and the four main bonus rounds activated by scatter symbols. Knowing what to expect from each makes the session easier to follow.
+            </p>
+
+            <h2 id="symbols">Symbols You'll Encounter</h2>
+            <p>
+              The paytable is split into card symbols (low pay) and Asian-themed icons (high pay), plus a wild and a scatter.
             </p>
             <ul>
-              <li><strong>Wild symbols:</strong> may substitute and help complete wins (if applicable).</li>
-              <li><strong>Scatters:</strong> often trigger bonus rounds (if applicable).</li>
-              <li><strong>Free spins:</strong> a separate play mode with special rules (if applicable).</li>
-              <li><strong>Multipliers:</strong> can increase payouts in certain situations (if applicable).</li>
-              <li><strong>Collect mechanics:</strong> "meter" style progress (if applicable).</li>
+              <li><strong>Low-paying symbols:</strong> stylised playing-card values 10, J, Q, K and A. They appear most often and pay smaller amounts.</li>
+              <li><strong>High-paying symbols:</strong> Feng Shui coins, the lion, the dragon and the Koi Princess herself. The Princess is the top regular symbol.</li>
+              <li><strong>Wild:</strong> the Great Wave wild substitutes for all regular symbols (it does not replace the scatter) and can deliver some of the largest base-game line wins.</li>
+              <li><strong>Scatter:</strong> the dragon "BONUS" scatter — landing three of these on reels 1, 3 and 5 triggers one of the four main bonus features.</li>
             </ul>
 
-            <h2>Demo Mode</h2>
+            <h2 id="bonuses">Bonus Features in Detail</h2>
             <p>
-              Many players look for a <strong>Koi Princess demo</strong> to learn the rhythm and features.
-              Demo mode is best used for mechanics and pacing — it doesn't predict real outcomes.
+              Koi Princess is unusually loaded with features for a 2015 NetEnt slot. There are <strong>four random features</strong> that can hit on any spin and <strong>four main bonus features</strong> triggered by scatters.
             </p>
 
-            <h2 id="rtp">RTP & Volatility</h2>
+            <h3>Random features (any spin)</h3>
+            <ul>
+              <li><strong>5-Hit:</strong> guarantees a 5-of-a-kind win across one of the medium-paying symbols.</li>
+              <li><strong>Random Wilds:</strong> drops between 4 and 9 overlay wild symbols onto the reels before they resolve.</li>
+              <li><strong>Wild Reels:</strong> turns 2 to 5 entire reels fully wild for a single, very high-paying spin.</li>
+              <li><strong>Bonus Activation:</strong> triggers one of the main bonus features outright, even without scatter symbols on screen.</li>
+            </ul>
+
+            <h3>Main bonus features (triggered by 3 scatters)</h3>
+            <ul>
+              <li><strong>Sure Win Free Spins:</strong> 10 free spins where every spin is guaranteed to produce a winning combination.</li>
+              <li><strong>Wild Reels Free Spins:</strong> 10 free spins, each with at least one fully wild reel for bigger combinations.</li>
+              <li><strong>Coin Win:</strong> an instant cash prize awarded as a multiplier of the current stake.</li>
+              <li><strong>Bonus Wheel:</strong> a multi-tier wheel that can award stake multipliers, free spins, or step you up to a higher tier of the wheel.</li>
+            </ul>
+
+            <h2 id="bonus-bet">Bonus Bet — How It Works</h2>
             <p>
-              RTP is a theoretical long-term return (not a promise). Volatility describes how wins tend to distribute:
-              some games feel "swingy", others steadier. If you don't have verified values, keep them as "TBD".
+              The Bonus Bet is one of the most distinctive things about Koi Princess. Switch it on and every spin costs <strong>twice as much</strong>, but two things change:
+            </p>
+            <ul>
+              <li>The probability of triggering a <strong>random feature</strong> roughly doubles.</li>
+              <li>The probability of landing the <strong>main bonus features</strong> via scatters increases noticeably.</li>
+            </ul>
+            <p>
+              The published RTP of 96.23% applies in the standard mode. Activating the Bonus Bet shifts the RTP slightly, and reviewers usually treat it as a "spice level" choice: more frequent features in exchange for a faster bankroll burn. If you're testing the game in <a href="#demo-mode">demo mode</a>, try a few sessions both with and without Bonus Bet to see which pacing fits you.
+            </p>
+
+            <h2 id="demo-mode">Demo Mode</h2>
+            <p>
+              A <strong>Koi Princess demo</strong> is widely available across licensed casinos and review sites. Demo play is the fastest way to learn the rhythm of the four random features, see how the Bonus Wheel branches, and decide whether you want to use the Bonus Bet. Just remember that demo results don't predict real-money outcomes — slots are random.
+            </p>
+
+            <h2 id="rtp">RTP, Volatility & Max Win</h2>
+            <p>
+              <strong>RTP (Return to Player)</strong> is a theoretical long-term return across millions of spins — not a promise for any single session. Koi Princess sits at <strong>96.23%</strong>, which is right around the industry average for NetEnt slots. <strong>Volatility</strong> describes how wins are distributed: Koi Princess is rated <strong>medium</strong>, meaning you get a steady stream of small-to-medium hits with occasional larger bursts from the random features and bonus rounds.
+            </p>
+            <p>
+              The <strong>maximum win</strong> is <strong>1,000× the stake</strong>, typically reached through Wild Reels Free Spins or top-tier Bonus Wheel multipliers. It's a sensible cap for a medium-volatility game — high enough to feel rewarding, but without the brutal swings of a 10,000×+ slot.
             </p>
 
             <div class="table-wrap" role="region" aria-label="Game facts table">
@@ -734,39 +986,75 @@
                 <tbody>
                   <tr>
                     <td>RTP (Return to Player)</td>
-                    <td>TBD</td>
-                    <td>Theoretical long-term return across many spins (not guaranteed).</td>
+                    <td>96.23%</td>
+                    <td>Theoretical long-term return — average for NetEnt classics.</td>
                   </tr>
                   <tr>
                     <td>Volatility</td>
-                    <td>TBD</td>
-                    <td>Higher volatility can mean fewer wins, but bigger swings; lower may feel steadier.</td>
+                    <td>Medium</td>
+                    <td>Frequent small-to-medium wins with occasional larger bursts.</td>
                   </tr>
                   <tr>
                     <td>Max Win</td>
-                    <td>TBD</td>
-                    <td>Maximum possible payout under official rules (if published).</td>
+                    <td>1,000× stake</td>
+                    <td>Reachable mainly through Wild Reels FS and Bonus Wheel.</td>
+                  </tr>
+                  <tr>
+                    <td>Reels &amp; Paylines</td>
+                    <td>5×3 / 20 fixed</td>
+                    <td>Classic NetEnt layout; pays from left to right.</td>
+                  </tr>
+                  <tr>
+                    <td>Bet Range</td>
+                    <td>€0.20 – €200</td>
+                    <td>Casual to high-roller friendly across most casinos.</td>
+                  </tr>
+                  <tr>
+                    <td>Provider</td>
+                    <td>NetEnt</td>
+                    <td>Established studio with strong RNG and audit history.</td>
+                  </tr>
+                  <tr>
+                    <td>Released</td>
+                    <td>24 Nov 2015</td>
+                    <td>Older title — well-tested, widely available, mobile-ready.</td>
                   </tr>
                   <tr>
                     <td>Mobile Play</td>
-                    <td>Yes</td>
-                    <td>The site is responsive; casino/game support may vary.</td>
+                    <td>Yes (HTML5)</td>
+                    <td>Fully optimized for iOS and Android; no app needed.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <h2>Mobile Tips (safe & practical)</h2>
+            <h2 id="strategy">Strategy &amp; Tips</h2>
+            <p>
+              Slots are random — there is no system that beats the math. But there are sensible habits that make a Koi Princess session more enjoyable and easier to manage.
+            </p>
             <ul>
-              <li>Use stable internet to avoid interrupted sessions.</li>
-              <li>Use time and budget limits if your casino provides tools.</li>
-              <li>Turbo/quick spin increases pace — stay aware of spending.</li>
+              <li><strong>Try the demo first.</strong> Five minutes in demo mode is enough to understand the four random features, the four bonus rounds, and the Bonus Wheel branching. Real money should never be your first lesson.</li>
+              <li><strong>Set a session bankroll.</strong> Decide upfront how much you're willing to spend, and stop when you hit that number — win or lose.</li>
+              <li><strong>Pick a bet size you can sustain.</strong> A reasonable rule of thumb is 100+ spins worth of stake in your bankroll. That gives features room to trigger.</li>
+              <li><strong>Understand the Bonus Bet trade-off.</strong> Doubling the spin cost roughly doubles your chance of features. It's not "free value" — it's a pacing choice.</li>
+              <li><strong>Don't chase losses.</strong> If a session goes cold, walk away. The math doesn't owe you anything for previous spins.</li>
+              <li><strong>Use casino tools.</strong> Most licensed casinos let you set deposit limits, loss limits, session time-outs and self-exclusion. Use them proactively, not after a problem.</li>
+            </ul>
+
+            <h2>Mobile Play &amp; Tips</h2>
+            <p>
+              Koi Princess runs in HTML5 directly in the browser, so iOS and Android phones, tablets and desktops all work without any app install. Performance is smooth on modern devices, and the layout adapts to portrait and landscape.
+            </p>
+            <ul>
+              <li>Use stable Wi-Fi or a strong mobile signal — interrupted sessions can be frustrating if a feature is mid-trigger.</li>
+              <li>Quick-spin and autoplay increase the pace dramatically — stay aware of how fast money moves through the session.</li>
+              <li>If your casino offers session-time and budget limits, set them before you start playing.</li>
             </ul>
 
             <h2>Responsible Gaming</h2>
             <p>
               This content is for adults (18+) only. Gambling can be addictive and financial losses are possible.
-              Set limits, take breaks, and avoid chasing losses.
+              Set limits, take breaks, and avoid chasing losses. If you feel gambling is becoming a problem, reach out to <a href="https://www.begambleaware.org/" target="_blank" rel="noopener nofollow">BeGambleAware</a>, <a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener nofollow">GamCare</a> or your local support service.
             </p>
           </div>
         </div>
@@ -780,123 +1068,154 @@
               <!-- Replace href="#" with your tracking links -->
 
               <div class="offer">
-                <img src="images/offers/turbowins.png" alt="TurboWins logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">TurboWins</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/YhdMxG" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/hellspin.png" alt="HellSpin logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
+                </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">Welcome package up to €3,000 + 150 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>5,000+ slots from top providers</li>
+                    <li>Live casino &amp; sports betting</li>
+                    <li>Fast withdrawals &amp; VIP rewards</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
               <div class="offer">
-                <img src="images/offers/luckyblock.png" alt="Luckyblock logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Luckyblock</div>
-                  <div class="desc">Bonus +200% - 25.000 $ + 50 FS</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/wKz4JRvY" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/slotsgem.png" alt="SlotsGem logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
+                </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">120% bonus up to €600 + 125 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>Huge slots &amp; live casino library</li>
+                    <li>Weekly cashback &amp; reload bonuses</li>
+                    <li>Quick deposits &amp; mobile-ready</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
               <div class="offer">
-                <img src="images/offers/cat-spins.png" alt="Cat Spins logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Cat Spins</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/bmJkZGQ3" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/slotsrave.png" alt="SlotsRave logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
+                </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">100% welcome bonus up to €500 + 100 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>Wide selection of slots &amp; live games</li>
+                    <li>Generous reload promotions</li>
+                    <li>Mobile-optimized platform</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
               <div class="offer">
-                <img src="images/offers/samba-slots.png" alt="Samba Slots logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Samba Slots</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/qf99R6hB" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/granawin.png" alt="Granawin logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
+                </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">150% welcome package up to €220 + 170 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>Premium game providers on board</li>
+                    <li>VIP loyalty &amp; rewards program</li>
+                    <li>24/7 customer support</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
               <div class="offer">
-                <img src="images/offers/golden-panda.png" alt="Golden Panda logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Golden Panda</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/f1Q38Dj2" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/amonbet.png" alt="Amonbet logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
+                </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">Welcome package up to €3,000 + 300 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>Casino &amp; sportsbook in one place</li>
+                    <li>Live dealer tables &amp; tournaments</li>
+                    <li>Crypto-friendly payment methods</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
               <div class="offer">
-                <img src="images/offers/ally-spin.png" alt="Ally Spin logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Ally Spin</div>
-                  <div class="desc">Bonus €200 - 150 FS</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/SPLqxZJc" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/20bet.png" alt="20bet logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
+                </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">100% bonus up to €120 + 120 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>Sports betting &amp; live casino combined</li>
+                    <li>Live in-play markets across sports</li>
+                    <li>Multiple deposit &amp; payout options</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
               <div class="offer">
-                <img src="images/offers/legiano.png" alt="Legiano logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Legiano</div>
-                  <div class="desc">Bonus €200 - 150 FS</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/DMjrFrCw" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/legiano.png" alt="Legiano logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
+                </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">100% welcome bonus up to €500 + 200 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>No max cashout on bonus winnings</li>
+                    <li>Free spins drip-fed over 10 days</li>
+                    <li>Smooth mobile experience</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
               <div class="offer">
-                <img src="images/offers/klikki-kasino.png" alt="Klikki Kasino logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Klikki Kasino</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/S9tfnTpf" target="_blank" rel="nofollow noopener">View offer</a>
+                <div class="offer-head">
+                  <img class="logo" src="images/offers/ally-spin.png" alt="AllySpin logo" loading="lazy" />
+                  <div class="offer-rating">
+                    <span>Rating</span>
+                    <span class="stars" aria-label="5 out of 5">★★★★★</span>
                   </div>
                 </div>
-              </div>
-
-              <div class="offer">
-                <img src="images/offers/coincasino.png" alt="CoinCasino logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">CoinCasino</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/tFYsm8xQ" target="_blank" rel="nofollow noopener">View offer</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="offer">
-                <img src="images/offers/instantcasino.png" alt="InstantCasino logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">InstantCasino</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/LdJkvL7s" target="_blank" rel="nofollow noopener">View offer</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="offer">
-                <img src="images/offers/fast-slots.png" alt="Fast Slots logo" loading="lazy" />
-                <div class="meta">
-                  <div class="name">Fast Slots</div>
-                  <div class="desc">Bonus +200% - €5000</div>
-                  <div class="action">
-                    <a class="btn primary" href="https://chicken-road-app.net/4RsB6tJR" target="_blank" rel="nofollow noopener">View offer</a>
-                  </div>
+                <div class="offer-body">
+                  <div class="offer-bonus">225% welcome bonus up to €1,000 + 200 Free Spins</div>
+                  <ul class="offer-features">
+                    <li>Crypto &amp; fiat payments accepted</li>
+                    <li>Massive slots &amp; live dealer library</li>
+                    <li>Bonus Crab feature on first deposit</li>
+                  </ul>
+                  <a class="offer-cta" href="#" target="_blank" rel="nofollow noopener">Claim bonus</a>
                 </div>
               </div>
 
@@ -904,17 +1223,14 @@
               <div class="dev-hints" aria-hidden="true">
                 Logos path: <strong>images/offers/</strong>
                 <ul>
-                  <li>images/offers/turbowins.png</li>
-                  <li>images/offers/luckyblock.png</li>
-                  <li>images/offers/cat-spins.png</li>
-                  <li>images/offers/samba-slots.png</li>
-                  <li>images/offers/golden-panda.png</li>
-                  <li>images/offers/ally-spin.png</li>
+                  <li>images/offers/hellspin.png</li>
+                  <li>images/offers/slotsgem.png</li>
+                  <li>images/offers/slotsrave.png</li>
+                  <li>images/offers/granawin.png</li>
+                  <li>images/offers/amonbet.png</li>
+                  <li>images/offers/20bet.png</li>
                   <li>images/offers/legiano.png</li>
-                  <li>images/offers/klikki-kasino.png</li>
-                  <li>images/offers/coincasino.png</li>
-                  <li>images/offers/instantcasino.png</li>
-                  <li>images/offers/fast-slots.png</li>
+                  <li>images/offers/ally-spin.png</li>
                 </ul>
               </div>
 
@@ -929,44 +1245,72 @@
           <h2>Koi Princess Slot FAQ</h2>
 
           <details>
+            <summary>Who developed the Koi Princess slot?</summary>
+            <div class="details-body">
+              Koi Princess was developed by <strong>NetEnt</strong> and released on 24 November 2015. NetEnt is an established Swedish slot studio with a long history of audited RNGs and well-known titles.
+            </div>
+          </details>
+
+          <details>
+            <summary>What is the Koi Princess RTP?</summary>
+            <div class="details-body">
+              The published RTP is <strong>96.23%</strong> in standard mode. Activating the Bonus Bet shifts the RTP slightly. RTP is a long-term theoretical figure and does not guarantee any specific outcome in a single session.
+            </div>
+          </details>
+
+          <details>
+            <summary>How volatile is Koi Princess?</summary>
+            <div class="details-body">
+              Volatility is <strong>medium</strong>. You can expect a steady stream of small to medium wins, with occasional bigger bursts from the random features and main bonus rounds.
+            </div>
+          </details>
+
+          <details>
+            <summary>What is the maximum win on Koi Princess?</summary>
+            <div class="details-body">
+              The maximum win is <strong>1,000× the stake</strong>, typically reached through Wild Reels Free Spins or the top tier of the Bonus Wheel.
+            </div>
+          </details>
+
+          <details>
+            <summary>How many paylines does Koi Princess have?</summary>
+            <div class="details-body">
+              Koi Princess has <strong>20 fixed paylines</strong> across 5 reels and 3 rows. You cannot deactivate lines — every spin always covers all 20.
+            </div>
+          </details>
+
+          <details>
+            <summary>What bonus features does the slot have?</summary>
+            <div class="details-body">
+              There are four <strong>random features</strong> (5-Hit, Random Wilds, Wild Reels, Bonus Activation) that can hit on any spin, plus four <strong>main bonus features</strong> triggered by scatters: Sure Win Free Spins, Wild Reels Free Spins, Coin Win and the Bonus Wheel.
+            </div>
+          </details>
+
+          <details>
+            <summary>How does the Bonus Bet work?</summary>
+            <div class="details-body">
+              The optional Bonus Bet doubles the cost of each spin in exchange for a roughly doubled chance of triggering random features and a higher chance of hitting the main bonus rounds. It's a pacing choice, not free value — your bankroll burns faster.
+            </div>
+          </details>
+
+          <details>
             <summary>Can I play Koi Princess in demo mode?</summary>
             <div class="details-body">
-              If a demo is available, it can help you learn the rules and feature timing. Demo mode is for practice, not prediction.
+              Yes. A free demo is widely available across licensed casinos and review sites. Demo mode is great for learning the rhythm of the features, but it does not predict real-money outcomes.
             </div>
           </details>
 
           <details>
-            <summary>What does RTP mean?</summary>
+            <summary>Is Koi Princess optimized for mobile?</summary>
             <div class="details-body">
-              RTP is a theoretical long-term return over many spins. It does not guarantee results in a single session.
-            </div>
-          </details>
-
-          <details>
-            <summary>How do I understand volatility?</summary>
-            <div class="details-body">
-              Volatility describes how wins typically distribute: higher volatility can mean bigger swings, while lower may feel steadier.
-            </div>
-          </details>
-
-          <details>
-            <summary>Does the slot have bonus rounds?</summary>
-            <div class="details-body">
-              Many slots include free spins or bonus features, but the exact set depends on the official rules of the game version.
-            </div>
-          </details>
-
-          <details>
-            <summary>Is this website 18+ only?</summary>
-            <div class="details-body">
-              Yes. This content is intended for adults (18+) only. Always follow local laws and play responsibly.
+              Yes. The slot is built in HTML5 and runs in the browser on iOS, Android, tablets and desktops. No app install is required, and the layout adapts to portrait and landscape.
             </div>
           </details>
 
           <details>
             <summary>Do you guarantee wins?</summary>
             <div class="details-body">
-              No. Slots are random. The safest approach is budgeting, limits, breaks, and responsible play.
+              No. Slots are random. The safest approach is budgeting, deposit and loss limits, breaks, and responsible play. This site (18+ only) is informational and does not guarantee any outcome.
             </div>
           </details>
         </div>
@@ -990,13 +1334,13 @@
           </p>
 
           <div class="footer-links" aria-label="Legal links">
-            <a href="/privacy-policy" rel="nofollow">Privacy Policy</a>
+            <a href="/privacy-policy" >Privacy Policy</a>
             <span class="dot">•</span>
-            <a href="/terms" rel="nofollow">Terms</a>
+            <a href="/terms" >Terms</a>
             <span class="dot">•</span>
-            <a href="/responsible-gaming" rel="nofollow">Responsible Gaming</a>
+            <a href="/responsible-gaming" >Responsible Gaming</a>
             <span class="dot">•</span>
-            <a href="/disclaimer" rel="nofollow">Disclaimer</a>
+            <a href="/disclaimer" >Disclaimer</a>
           </div>
 
           <p style="font-size:12px;color:var(--muted);margin-top:10px;">
@@ -1209,7 +1553,7 @@
       localStorage.setItem('cookieConsent', 'accepted');
       cookieBar.style.display = 'none';
       // You can add analytics tracking here
-      console.log('Cookies accepted');
+      console.log('Cookies accepted'); 
     });
     
     // Reject cookies
@@ -1223,8 +1567,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
